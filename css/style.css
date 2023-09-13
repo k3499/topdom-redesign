@@ -1,0 +1,114 @@
+/* fonts */
+
+/* variables */
+:root {
+  --main-with: 1420px;
+  --roboto-light: "Roboto", sans-serif;
+
+  --green-accent: #0abc22;
+}
+
+/*#region LOGO */
+.logo {
+  text-indent: -99999999999px;
+  overflow: hidden;
+  display: block;
+  width: 220px;
+  height: 43px;
+  background-size: contain;
+}
+.logo::before {
+  content: "";
+  display: block;
+  width: 52px;
+  height: 43px;
+  background-size: contain;
+}
+.logo_white {
+  background: url(/img/logo-topdom-text-white.svg) no-repeat 63px 50%;
+  background-size: contain;
+}
+.logo_white::before {
+  background: url(/img/logo-topdom-pic-white.svg) no-repeat;
+  background-size: contain;
+}
+.logo_header {
+  margin: 38px 0 0;
+}
+/*#endregion LOGO*/
+
+/*#region HEADER */
+.header__wrapper {
+  height: 200px;
+  max-width: var(--main-with);
+  margin: 0 auto -200px;
+  background: transparent;
+}
+.header__upper {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.header__rating {
+  display: flex;
+  gap: 21px;
+}
+.header__flag {
+  box-sizing: border-box;
+  padding: 20px 0 0;
+  width: 77px;
+  height: 71px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: var(--green-accent);
+  position: relative;
+  color: #fff;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.header__flag::before,
+.header__flag::after {
+  content: "";
+  width: 50%;
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  bottom: -40px;
+  border: 40px solid transparent;
+  border-bottom-width: 0;
+}
+.header__flag::before {
+  left: 0;
+  border-top-color: var(--green-accent);
+  border-left-width: 0;
+}
+
+.header__flag::after {
+  right: 0;
+  border-top-color: var(--green-accent);
+  border-right-width: 0;
+}
+.header__stars {
+  padding: 30px 0 0;
+}
+.header__star {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url(/img/star.svg) no-repeat;
+}
+
+/*#endregion HEADER*/
+
+/*#region COVER */
+.cover {
+  background: url(/img/cover-bg.jpg) no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  padding: 200px 0 0;
+}
+/*#endregion COVER*/
