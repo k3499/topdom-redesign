@@ -145,6 +145,11 @@
   font-weight: 500;
 }
 .header__ratingSubtitle {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 /*#endregion HEADER*/
 
