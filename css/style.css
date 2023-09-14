@@ -56,6 +56,7 @@
   font-weight: 500;
 }
 .green-button {
+  cursor: pointer;
   border-radius: 10px;
   background: linear-gradient(180deg, var(--green-accent) 0%, #398944 100%);
   color: var(--white-text);
@@ -223,6 +224,7 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  margin-bottom: 4px;
 }
 .header__call-tel {
   display: block;
@@ -366,12 +368,37 @@
 }
 .cover__button {
   display: block;
-  margin: 68px 0 0;
+  margin: 68px 0 72px;
   padding: 25px 70px 25px 103px;
   text-align: left;
   background-image: ;
   background: url(/img/calc.svg) no-repeat 49px 50%,
     linear-gradient(180deg, var(--green-accent) 0%, #398944 100%);
   background-size: 47px;
+}
+.cover__feature-wrapper {
+  display: flex;
+  gap: 30px;
+}
+.cover__feature-item {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 333px;
+  height: 130px;
+  border-radius: 20px;
+  border: 1px solid #607083;
+  background: rgba(57, 72, 88, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 0 30px;
+}
+.cover__feature-text {
+  color: var(--white-text);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 127%;
+  letter-spacing: 0.72px;
 }
 /*#endregion COVER*/
