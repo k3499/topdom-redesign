@@ -72,7 +72,7 @@
   background-size: contain;
 }
 .logo_header {
-  margin: 38px 0 0;
+  margin: 38px 42px 0 0;
 }
 /*#endregion LOGO*/
 
@@ -138,6 +138,9 @@
   height: 14px;
   background: url(/img/star.svg) no-repeat;
 }
+.header__rating {
+  margin-right: 85px;
+}
 .header__ratingTitle {
   color: #fff;
   font-size: 16px;
@@ -150,6 +153,29 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+}
+.header__projectCalc {
+  padding-top: 40px;
+}
+.header__sentProject {
+  display: flex;
+  max-width: 195px;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  text-decoration-line: underline;
+}
+.header__sentProject::before {
+  content: "";
+  display: block;
+  width: 63px;
+  border-radius: 50%;
+  height: 42px;
+  background: #394858 url(/img/sent-project.svg) no-repeat 50%;
+  background-size: 22px 22px;
+  margin-right: 16px;
 }
 /*#endregion HEADER*/
 
