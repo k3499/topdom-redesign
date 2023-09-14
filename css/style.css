@@ -1,4 +1,4 @@
-/*#region fonts */
+/*#region FONTS */
 @font-face {
   font-family: "Roboto";
   src: url("/fonts/Roboto-Italic.ttf") format("truetype");
@@ -36,7 +36,7 @@
   font-style: normal;
 }
 
-/*#endregion fonts*/
+/*#endregion FONTS*/
 
 /* variables */
 :root {
@@ -44,8 +44,17 @@
   --font-roboto: "Roboto", sans-serif;
 
   --green-accent: #0abc22;
+  --white-text: #fff;
   font-family: "Roboto", sans-serif;
 }
+/*#region UTILS */
+.font-light {
+  font-weight: 300;
+}
+.font-medium {
+  font-weight: 500;
+}
+/*#endregion UTILS */
 
 /*#region LOGO */
 .logo {
@@ -100,7 +109,7 @@
   margin: 0 auto;
   background-color: var(--green-accent);
   position: relative;
-  color: #fff;
+  color: var(--white-text);
   text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
   font-size: 28px;
   font-style: normal;
@@ -141,33 +150,33 @@
 .header__rating {
   margin-right: 85px;
 }
-.header__ratingTitle {
-  color: #fff;
+.header__rating-title {
+  color: var(--white-text);
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
 }
-.header__ratingSubtitle {
-  color: #fff;
+.header__rating-subtitle {
+  color: var(--white-text);
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
 }
-.header__projectCalc {
+.header__project-calc {
   padding-top: 40px;
 }
-.header__sentProject {
+.header__sent-project {
   display: flex;
   max-width: 195px;
-  color: #fff;
+  color: var(--white-text);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
   text-decoration-line: underline;
 }
-.header__sentProject::before {
+.header__sent-project::before {
   content: "";
   display: block;
   width: 63px;
@@ -177,7 +186,55 @@
   background-size: 22px 22px;
   margin-right: 16px;
 }
+.header__social {
+  padding-top: 40px;
+}
+.header__social-title {
+  color: var(--white-text);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 104%;
+  margin-bottom: 6px;
+  text-align: center;
+}
 /*#endregion HEADER*/
+
+/*#region SOCIAL LINK */
+.social-list {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.social-list__link {
+  display: block;
+  width: 38px;
+  height: 38px;
+  text-indent: -99999999px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-size: 18px;
+}
+.social-list__link_whatsupp {
+  box-shadow: 1px 1px 0px 0px #26e03f inset,
+    -1px -1px 0px 0px var(--green-accent) inset;
+  background: #1fd637 url(/img/whatsapp.svg) no-repeat 50%;
+}
+.social-list__link_telegram {
+  box-shadow: 1px 1px 0px 0px #2fbaff inset, -1px -1px 0px 0px #008cd1 inset;
+  background: #02a4f4 url(/img/telegram.svg) no-repeat 50%;
+}
+.social-list__link_youtube {
+  box-shadow: 1px 1px 0px 0px #ff5959 inset, -1px -1px 0px 0px #e72e2e inset;
+  background: #f34343 url(/img/youtube.svg) no-repeat 50%;
+}
+.social-list__link_vk {
+  box-shadow: 1px 1px 0px 0px #1d84ff inset, -1px -1px 0px 0px #0668db inset;
+  background: #0271f4 url(/img/vk.svg) no-repeat 50%;
+}
+/*#endregion SOCIAL LINK */
 
 /*#region COVER */
 .cover {
