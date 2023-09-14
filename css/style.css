@@ -55,6 +55,19 @@
 .font-medium {
   font-weight: 500;
 }
+.green-button {
+  border-radius: 10px;
+  background: linear-gradient(180deg, var(--green-accent) 0%, #398944 100%);
+  color: var(--white-text);
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  text-transform: uppercase;
+  padding: 25px 35px;
+  border: 0;
+  outline: 0;
+}
 /*#endregion UTILS */
 
 /*#region LOGO */
@@ -350,5 +363,15 @@
   height: 1px;
   background: var(--green-accent);
   margin: 12px 15px 0 100px;
+}
+.cover__button {
+  display: block;
+  margin: 68px 0 0;
+  padding: 25px 70px 25px 103px;
+  text-align: left;
+  background-image: ;
+  background: url(/img/calc.svg) no-repeat 49px 50%,
+    linear-gradient(180deg, var(--green-accent) 0%, #398944 100%);
+  background-size: 47px;
 }
 /*#endregion COVER*/
