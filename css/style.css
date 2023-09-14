@@ -81,7 +81,7 @@
   background-size: contain;
 }
 .logo_header {
-  margin: 38px 42px 0 0;
+  margin: 38px 0 0 0;
 }
 /*#endregion LOGO*/
 
@@ -95,6 +95,7 @@
 .header__upper {
   display: flex;
   flex-wrap: nowrap;
+  justify-content: space-between;
 }
 .header__rating {
   display: flex;
@@ -146,9 +147,6 @@
   width: 14px;
   height: 14px;
   background: url(/img/star.svg) no-repeat;
-}
-.header__rating {
-  margin-right: 85px;
 }
 .header__rating-title {
   color: var(--white-text);
@@ -224,6 +222,16 @@
   font-weight: 400;
   line-height: normal;
   text-decoration-line: underline;
+}
+.header__call {
+  padding-top: 40px;
+}
+.header__menu-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
 }
 /*#endregion HEADER*/
 
