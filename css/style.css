@@ -390,6 +390,9 @@
   background: #f6f6f6;
   text-decoration: none;
 }
+.categoryTags__link:hover {
+  background: #eceaea;
+}
 /*#endregion CATEGORY TAGS */
 
 /*#region PROJECT LIST */
@@ -504,7 +507,7 @@
   letter-spacing: 0.534px;
 }
 
-/*#region CPROJECT */
+/*#region PROJECT */
 .project {
   width: 33.33333%;
   overflow: hidden;
@@ -543,11 +546,14 @@
 .project__stats-wrap {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 0 28px;
+  border-bottom: 1px solid #ebebeb;
 }
 .project__stats-item {
   display: flex;
   align-items: flex-end;
-  width: 50%;
+  width: calc(50% - 10px);
   flex-shrink: 0;
 }
 .project__stats-pic {
@@ -559,4 +565,30 @@
 .project__stats-pic_size {
   background: url(/img/size.svg) no-repeat;
 }
-/*#endregion CPROJECT */
+.project__stats-pic_bath {
+  background: url(/img/bathroom.svg) no-repeat;
+}
+.project__stats-pic_room {
+  background: url(/img/rooms.svg) no-repeat;
+}
+.project__stats-pic_bed {
+  background: url(/img/bedrooms.svg) no-repeat;
+}
+.project__stats-name {
+  color: #7b7b7b;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.72px;
+}
+.project__stats-num {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.72px;
+}
+
+/*#endregion PROJECT */
