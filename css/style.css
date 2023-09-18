@@ -55,6 +55,18 @@
 .font-medium {
   font-weight: 500;
 }
+.button-flat {
+  border-radius: 5px;
+  background: #44c054;
+  padding: 19px 22px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.72px;
+}
 /*#endregion UTILS */
 
 /*#region LOGO */
@@ -352,3 +364,199 @@
   margin: 12px 15px 0 100px;
 }
 /*#endregion COVER*/
+
+/*#region CATEGORY TAGS */
+.categoryCard {
+  padding: 75px 0 0;
+}
+.categoryTags__wrapper {
+  max-width: var(--main-width);
+  margin: 0 auto;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 60px;
+  gap: 20px;
+}
+.categoryTags__link {
+  padding: 19px 22px;
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.72px;
+  border-radius: 5px;
+  background: #f6f6f6;
+  text-decoration: none;
+}
+/*#endregion CATEGORY TAGS */
+
+/*#region PROJECT LIST */
+.project-list__wrapper {
+  max-width: var(--main-width);
+  margin: 0 auto;
+}
+.title {
+  color: #000;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.6px;
+  text-align: center;
+  margin: 0 0 40px;
+}
+.project-list__container {
+  display: flex;
+  gap: 30px 45px;
+}
+/*#endregion PROJECT LIST */
+
+/** Swiper styles **/
+
+:root {
+  --swiper-navigation-top-offset: 82%;
+}
+
+.swiper {
+  user-select: none;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  background-color: rgba(51, 51, 51, 1);
+  border-radius: 25px;
+}
+
+.swiper-slide-image {
+  position: absolute;
+  object-fit: cover;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.swiper-button-prev {
+  background-image: url("/img/prev_n.svg") !important;
+  background-repeat: no-repeat;
+  background-size: 18px;
+  width: 18px;
+  height: 20px;
+  left: 12px;
+}
+
+.swiper-button-next {
+  background-image: url("/img/play_n.svg") !important;
+  background-repeat: no-repeat;
+  background-size: 18px;
+  width: 18px;
+  height: 20px;
+  right: 12px;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none;
+}
+.swiper-pagination-wrapper {
+  box-sizing: border-box;
+  z-index: 2;
+  display: inline-block;
+  position: absolute;
+  width: 136px;
+  height: 40px;
+  bottom: 14px;
+  left: 14px;
+  border-radius: 100px;
+  border: 1px solid #797979;
+  background: rgba(96, 112, 131, 0.2);
+  backdrop-filter: blur(10px);
+}
+.swiper-pagination-current {
+  color: #50de62;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+.swiper-pagination-fraction {
+  color: var(--white-text);
+  font-size: 13.35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.534px;
+}
+
+/*#region CPROJECT */
+.project {
+  width: 33.33333%;
+  overflow: hidden;
+}
+.project__image-wrap {
+  position: relative;
+  height: 300px;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 0 0 25px;
+}
+.project__image-status {
+  position: absolute;
+  color: var(--white-text);
+  font-size: 13.35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.534px;
+  z-index: 2;
+  padding: 2px 12px;
+  text-transform: uppercase;
+}
+.project__image-status_hit {
+  background: #44c054;
+  border-radius: 84px;
+  top: 25px;
+  left: 25px;
+}
+.project__image-status_top {
+  background: #4eaaff;
+  border-radius: 84px;
+  top: 25px;
+  left: 87px;
+}
+.project__stats-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.project__stats-item {
+  display: flex;
+  align-items: flex-end;
+  width: 50%;
+  flex-shrink: 0;
+}
+.project__stats-pic {
+  margin: 0 11px 0 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.project__stats-pic_size {
+  background: url(/img/size.svg) no-repeat;
+}
+/*#endregion CPROJECT */
