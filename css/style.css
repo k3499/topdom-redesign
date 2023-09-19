@@ -439,7 +439,9 @@
 }
 .project-list__container {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px 45px;
+  padding: 0 0 50px;
 }
 /*#endregion PROJECT LIST */
 
@@ -536,9 +538,8 @@
 
 /*#region PROJECT */
 .project {
-  width: 33.33333%;
+  width: calc(33.33333% - 30px);
   overflow: hidden;
-  padding: 0 0 50px;
 }
 .project__image-wrap {
   position: relative;
@@ -718,9 +719,12 @@
   font-style: normal;
   font-weight: 300;
   line-height: 129%;
-  letter-spacing: 0.64px;
 }
 .project__contacts-text-accent {
   text-decoration: underline;
+}
+.project__form-wrap {
+  background: url(/img/bg-form-card.jpg) no-repeat;
+  background-size: cover;
 }
 /*#endregion PROJECT */
