@@ -1066,3 +1066,28 @@
 }
 
 /*#endregion NUMBERS */
+
+/*#region ARCH */
+.arch-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 85px auto 0;
+}
+.arch-form::before {
+  content: "";
+  background: url(/img/sky-bg.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.1;
+}
+
+.arch-form__wrapper {
+  max-width: 1420px;
+}
+/*#endregion ARCH */
