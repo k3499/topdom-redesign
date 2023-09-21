@@ -515,14 +515,17 @@
   gap: 30px 30px;
   grid-auto-flow: row;
 }
-.categoryGrid__main {
-  grid-area: 1 / 1 / 2 / 2;
-}
 .categoryGrid__floors {
   grid-area: 1 / 3 / 3 / 4;
-}
-.categoryGrid__stone {
-  grid-area: 1 / 1 / 2 / 2;
+  background: linear-gradient(
+      90deg,
+      rgb(4 4 4 / 45%) 36.64%,
+      rgba(69, 75, 90, 0) 100%
+    ),
+    url(/img/cat-floor.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  mix-blend-mode: multiply;
 }
 .categoryGrid__blocks {
   grid-area: 1 / 2 / 2 / 3;
@@ -538,12 +541,39 @@
 }
 .categoryGrid__stones {
   grid-area: 1 / 1 / 2 / 2;
+  background: linear-gradient(
+      90deg,
+      rgb(4 4 4 / 45%) 36.64%,
+      rgba(69, 75, 90, 0) 100%
+    ),
+    url(/img/cat-stone.png) no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  mix-blend-mode: multiply;
 }
 .categoryGrid__size {
   grid-area: 2 / 1 / 3 / 2;
+  background: linear-gradient(
+      90deg,
+      rgb(4 4 4 / 45%) 36.64%,
+      rgba(69, 75, 90, 0) 100%
+    ),
+    url(/img/cat-size.png) no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  mix-blend-mode: multiply;
 }
 .categoryGrid__options {
   grid-area: 2 / 2 / 3 / 3;
+  background: linear-gradient(
+      90deg,
+      rgb(4 4 4 / 45%) 36.64%,
+      rgba(69, 75, 90, 0) 100%
+    ),
+    url(/img/cat-options.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  mix-blend-mode: multiply;
 }
 
 /*#endregion CATEGORY GRID */
