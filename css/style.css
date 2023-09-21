@@ -1151,12 +1151,27 @@
   gap: 32px;
 }
 .numbers__card {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  height: 100%;
+  border-radius: 20px;
+}
+.numbers__card-wrap {
   width: calc(25% - 24px);
   height: 330px;
   border-radius: 20px;
   position: relative;
-  overflow: hidden;
-  background: #fff;
+}
+.numbers__plus {
+  width: 47px;
+  height: 47px;
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: -23px;
+  z-index: 2;
+  transform: translate(-50%, 0);
 }
 .numbers__card-title {
   color: #000;
@@ -1311,8 +1326,20 @@
   left: 0px;
   opacity: 0.1;
 }
-
 .arch-form__wrapper {
+  width: 100%;
   max-width: 1420px;
+  margin: 0 auto;
+}
+.arch-form__title {
+  color: #000;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 147%;
+  letter-spacing: 1px;
+  max-width: 740px;
+  padding: 0;
+  margin: 0 0 82px;
 }
 /*#endregion ARCH */
