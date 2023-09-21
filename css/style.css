@@ -1313,23 +1313,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 85px auto 0;
-}
-.arch-form::before {
-  content: "";
+  margin: 55px auto 0;
+  padding-top: 30px;
   background: url(/img/sky-bg.png) no-repeat;
   background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.1;
 }
 .arch-form__wrapper {
   width: 100%;
   max-width: 1420px;
   margin: 0 auto;
+  position: relative;
 }
 .arch-form__title {
   color: #000;
@@ -1340,6 +1333,119 @@
   letter-spacing: 1px;
   max-width: 740px;
   padding: 0;
-  margin: 0 0 82px;
+  margin: 0;
+}
+.arch-form__container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  position: inherit;
+  padding: 0 0 140px;
+}
+.arch-form__feature {
+  padding: 82px 0 0 0;
+}
+.arch-form__feature-title {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  margin: 0 0 22px;
+}
+.arch-form__feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 56px;
+}
+.arch-form__feature-item {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 181%;
+  padding-left: 25px;
+  background: url(/img/arrow-green.svg) 0 40% no-repeat;
+  background-size: 15px;
+}
+.arch-form__feature-video-play {
+  position: absolute;
+  right: -21px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.arch-form__feature-video-wrapper {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  width: 308px;
+  height: 174px;
+  border-radius: 20px;
+  border: 5px solid #fff;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 115%;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 0 100px 6px 21px;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0px 6px 8px -3px rgba(155, 158, 159, 0.16);
+  -moz-box-shadow: 0px 6px 8px -3px rgba(155, 158, 159, 0.16);
+  box-shadow: 0px 6px 8px -3px rgba(155, 158, 159, 0.16);
+}
+.arch-form__feature-video1 {
+  background: url(/img/feature-video1.jpg) no-repeat;
+  background-size: cover;
+  margin-bottom: 18px;
+}
+.arch-form__feature-video2 {
+  background: url(/img/feature-video2.jpg) no-repeat;
+  background-size: cover;
+}
+.arch-form__form {
+  padding: 20px;
+  border-radius: 25px;
+  background: #fff;
+  max-width: 493px;
+  height: fit-content;
+  position: inherit;
+}
+.arch-form__form-wrapper {
+  border-radius: 20px;
+  border: 1px solid #eee;
+}
+.consultation__form-title_arch {
+  color: #000;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 47px 20px 0;
+}
+.consultation-form_arch {
+  margin: 36px 0 46px 0;
+  padding: 0 40px;
+}
+.consultation-form__checkbox_arch + label::before {
+  background-color: #e4f2ff;
+}
+.arch-form__bg {
+  position: absolute;
+  right: 141px;
+  bottom: 75px;
+}
+.arch-form__bg-tree1 {
+  position: absolute;
+  right: 214px;
+  top: -75px;
+}
+.arch-form__bg-tree2 {
+  position: absolute;
+  right: -89px;
+  bottom: 135px;
+  rotate: 180deg;
 }
 /*#endregion ARCH */
