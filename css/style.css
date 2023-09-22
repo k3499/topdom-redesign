@@ -1481,7 +1481,7 @@
 .arch-form__feature-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 56px;
+  margin: 0 0 42px;
 }
 .arch-form__feature-item {
   color: #000;
@@ -1576,8 +1576,76 @@
 /*#endregion ARCH */
 
 /*#region LAND */
+.land {
+  padding: 105px 0 140px;
+}
 .land__wrapper {
   max-width: var(--main-width);
   margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  position: relative;
+}
+.land__picture-left,
+.land__picture-right {
+  width: 333px;
+  height: 425px;
+  border-radius: 20px;
+}
+.land__picture-left {
+  background: url(/img/land-left.jpg) no-repeat;
+}
+.land__picture-right {
+  background: url(/img/land-right.png) no-repeat;
+}
+.land__picture-bg-book {
+  width: 437px;
+  height: 258px;
+  position: absolute;
+  bottom: -67px;
+  left: -115px;
+  background: url(/img/land-book.png) no-repeat;
+}
+.land__title {
+  color: #000;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 1.6px;
+  max-width: 540px;
+  margin: 8px 0 38px;
+  padding: 0;
+}
+.land__form-wrap {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+.consultation-form__input_land,
+.consultation-form__input_land:first-of-type {
+  margin: 0;
+  color: #9b9b9b;
+  text-align: center;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 121%;
+  height: auto;
+}
+.consultation-form__input:first-of-type {
+  margin-bottom: 0;
+}
+.consultation-form__submit_land {
+  margin: 0;
+  padding: 13px 27px 13px 51px;
+  color: #fff;
+  text-align: center;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  background-size: 17px;
+  background: var(--green-accent) url(/img/whatsapp.svg) 22px 50% no-repeat;
+  min-width: 212px;
 }
 /*#endregion LAND */
