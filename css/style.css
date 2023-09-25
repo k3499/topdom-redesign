@@ -801,7 +801,7 @@
   --swiper-navigation-top-offset: 82%;
 }
 
-.swiper {
+.swiper1 {
   user-select: none;
   box-sizing: border-box;
   overflow: hidden;
@@ -811,7 +811,7 @@
   padding-bottom: 0px;
 }
 
-.swiper-slide {
+.swiper1-slide {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -825,7 +825,7 @@
   border-radius: 25px;
 }
 
-.swiper-slide-image {
+.swiper1-slide-image {
   position: absolute;
   object-fit: cover;
   left: 0%;
@@ -834,7 +834,7 @@
   height: 100%;
   z-index: 0;
 }
-.swiper-button-prev {
+.swiper1-button-prev {
   background-image: url("/img/prev_n.svg") !important;
   background-repeat: no-repeat;
   background-size: 18px;
@@ -843,7 +843,7 @@
   left: 12px;
 }
 
-.swiper-button-next {
+.swiper1-button-next {
   background-image: url("/img/play_n.svg") !important;
   background-repeat: no-repeat;
   background-size: 18px;
@@ -851,8 +851,8 @@
   height: 20px;
   right: 12px;
 }
-.swiper-button-next:after,
-.swiper-button-prev:after {
+.swiper1-button-next:after,
+.swiper1-button-prev:after {
   display: none;
 }
 .swiper-pagination-wrapper {
@@ -1809,3 +1809,202 @@
   line-height: 131%;
 }
 /*#endregion PRICE GUARANTEES */
+
+/*#region VIDEO & MORTGAGE */
+.video-mortgage {
+  padding: 100px 0 84px;
+  background: url(/img/sky-bg.png) no-repeat;
+  background-size: cover;
+}
+.video-mortgage__wrapper {
+  max-width: var(--main-width);
+  margin: 0 auto;
+}
+/*#endregion VIDEO & MORTGAGE */
+
+/*#region VIDEO SLIDER */
+.videoSlider {
+  margin: 0 0 90px 0;
+}
+.videoSlider__title {
+  color: #000;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 1.6px;
+  margin: 0 0 38px;
+}
+.swiperVideo {
+  user-select: none;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+  height: 255px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.swiperVideo-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  background-color: rgba(51, 51, 51, 1);
+  border-radius: 30px;
+  border: 7px solid rgba(255, 255, 255, 1);
+}
+
+.swiperVideo-slide-image {
+  position: absolute;
+  object-fit: cover;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.videoSlider {
+  position: relative;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  top: calc(50% + 45px);
+}
+.swiper-button-next {
+  right: -65px;
+}
+.swiper-button-prev {
+  left: -65px;
+}
+.swiperVideo-slide__play {
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  box-sizing: border-box;
+  background: var(--green-accent) url(/img/play_white.svg) 53% no-repeat;
+  background-size: 19px;
+  border: 7px solid #fff;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.mortgage {
+  border-radius: 92px;
+  border: 1px solid #c4d8ea;
+  background: #fff;
+  padding: 65px 95px;
+  box-sizing: border-box;
+}
+.mortgage__title {
+  color: #000;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 1.92px;
+  max-width: 630px;
+  margin: 0 0 34px;
+}
+.mortgage__percent {
+  color: #000;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  margin: 0;
+  padding: 0;
+}
+.mortgage__bank {
+  color: #838383;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  margin: 0 0 62px;
+  padding: 0;
+}
+.mortgage__slider-wrap {
+  margin-bottom: 53px;
+  position: relative;
+}
+.mortgage__slider-title {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0 0 15px;
+  padding: 0;
+}
+.mortgage__button {
+  display: block;
+  width: fit-content;
+  border-radius: 73px;
+  background: var(--green-accent);
+  padding: 29px 60px;
+  font-size: 24.758px;
+  font-style: normal;
+  font-weight: 300;
+  text-decoration: none;
+  color: #fff;
+}
+.mortgage-left-wrap {
+  max-width: 560px;
+}
+.swiperBanks {
+  user-select: none;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+  height: 78px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.swiperBanks-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  background-color: rgba(51, 51, 51, 1);
+  border-radius: 0px;
+}
+
+.swiperBanks-slide-image {
+  position: absolute;
+  object-fit: cover;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.swiperBanks-button-next:after,
+.swiperBanks-button-prev:after {
+  font-size: 30px;
+}
+.swiperBanks-button-next,
+.swiperBanks-button-prev {
+  color: #02a4f4;
+  top: calc(50% + 20px);
+}
+.swiperBanks-button-prev {
+  left: -50px;
+}
+.swiperBanks-button-next {
+  right: -50px;
+}
+/*#endregion VIDEO SLIDER */
