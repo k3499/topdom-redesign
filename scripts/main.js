@@ -1,8 +1,9 @@
+//menu start
 window.addEventListener("scroll", function () {
   const header = document.querySelector(".header");
   const logo = document.querySelector(".logo");
 
-  // Проверяем, насколько пользователь прокрутил страницу вниз
+  // Проверяем, что пользователь прокрутил страницу вниз
   if (window.scrollY > 0) {
     // Добавляем новый класс к элементу
     header.classList.add("header-white");
@@ -15,3 +16,8 @@ window.addEventListener("scroll", function () {
     logo.classList.add("logo_white");
   }
 });
+//menu end
+
+//
+
+//
