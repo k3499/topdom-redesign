@@ -1896,12 +1896,65 @@
   transform: translate(-50%, -50%);
   z-index: 2;
 }
+
+.swiperBanks {
+  user-select: none;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+  height: 78px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.swiperBanks-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  background-color: rgba(51, 51, 51, 1);
+  border-radius: 0px;
+}
+
+.swiperBanks-slide-image {
+  position: absolute;
+  object-fit: cover;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.swiperBanks-button-next:after,
+.swiperBanks-button-prev:after {
+  font-size: 30px;
+}
+.swiperBanks-button-next,
+.swiperBanks-button-prev {
+  color: #02a4f4;
+  top: calc(50% + 20px);
+}
+.swiperBanks-button-prev {
+  left: -50px;
+}
+.swiperBanks-button-next {
+  right: -50px;
+}
+/*#endregion VIDEO SLIDER */
+
+/*#region MORTGAGE */
 .mortgage {
   border-radius: 92px;
   border: 1px solid #c4d8ea;
   background: #fff;
-  padding: 65px 95px;
+  padding: 55px 95px;
   box-sizing: border-box;
+  position: relative;
 }
 .mortgage__title {
   color: #000;
@@ -1959,52 +2012,9 @@
 .mortgage-left-wrap {
   max-width: 560px;
 }
-.swiperBanks {
-  user-select: none;
-  box-sizing: border-box;
-  overflow: hidden;
-  width: 100%;
-  height: 78px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.swiperBanks-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  color: #fff;
-  overflow: hidden;
-  position: relative;
-  box-sizing: border-box;
-  background-color: rgba(51, 51, 51, 1);
-  border-radius: 0px;
-}
-
-.swiperBanks-slide-image {
+.mortgage__bg {
   position: absolute;
-  object-fit: cover;
-  left: 0%;
-  top: 0%;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
+  right: -124px;
+  bottom: 0;
 }
-.swiperBanks-button-next:after,
-.swiperBanks-button-prev:after {
-  font-size: 30px;
-}
-.swiperBanks-button-next,
-.swiperBanks-button-prev {
-  color: #02a4f4;
-  top: calc(50% + 20px);
-}
-.swiperBanks-button-prev {
-  left: -50px;
-}
-.swiperBanks-button-next {
-  right: -50px;
-}
-/*#endregion VIDEO SLIDER */
+/*#endregion MORTGAGE */
