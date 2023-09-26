@@ -1791,6 +1791,94 @@
           </div>
         </div>
       </section>
+      <section class="team">
+        <div class="team__wrapper">
+          <p class="team__title">Наша команда</p>
+          <div class="team__content">
+            <div class="team__content-left">
+              <div class="team__content-masters">
+                <p class="team__content-masters-title">80+ человека</p>
+                <p class="team__content-masters-subtitle">в штате мастеров</p>
+                <ul
+                  class="arch-form__feature-list arch-form__feature-list-team"
+                >
+                  <li class="arch-form__feature-item">3 руководителя</li>
+                  <li class="arch-form__feature-item">6 проектировщиков</li>
+                  <li class="arch-form__feature-item">1 бухгалтер</li>
+                  <li class="arch-form__feature-item">7 менеджеров</li>
+                  <li class="arch-form__feature-item">3 офис-менеджер</li>
+                  <li class="arch-form__feature-item">3 оператора</li>
+                  <li class="arch-form__feature-item">
+                    7 сотрудника call-центра
+                  </li>
+                  <li class="arch-form__feature-item">2 контент-менеджера</li>
+                  <li class="arch-form__feature-item">1 маркетолог</li>
+                  <li class="arch-form__feature-item">1 ипотечный брокер</li>
+                  <li class="arch-form__feature-item">3 программиста</li>
+                </ul>
+              </div>
+              <div class="team__content-office">
+                <p class="team__content-masters-title">40+</p>
+                <p class="team__content-masters-subtitle">
+                  офисных сотрудников
+                </p>
+                <ul
+                  class="arch-form__feature-list arch-form__feature-list-team"
+                >
+                  <li class="arch-form__feature-item">9 прорабов</li>
+                  <li class="arch-form__feature-item">
+                    11 бригады фундаментчиков
+                  </li>
+                  <li class="arch-form__feature-item">13 бригады каменщиков</li>
+                  <li class="arch-form__feature-item">
+                    14 бригады кровельщиков
+                  </li>
+                  <li class="arch-form__feature-item">5 сантехников</li>
+                  <li class="arch-form__feature-item">3 электрика</li>
+                  <li class="arch-form__feature-item">3 снабженца</li>
+                  <li class="arch-form__feature-item">
+                    10 бригады отделочников
+                  </li>
+                  <li class="arch-form__feature-item">11 бригады штукатуров</li>
+                  <li class="arch-form__feature-item">и другие</li>
+                </ul>
+              </div>
+            </div>
+            <div class="team__content-right">
+              <div class="swiper swiperTeam">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiperTeam-slide">
+                    <img
+                      class="swiper-slide-image swiperTeam-slide-image"
+                      src="https://studio.swiperjs.com/demo-images/nature/01.jpg"
+                    />
+                  </div>
+
+                  <div class="swiper-slide swiperTeam-slide">
+                    <img
+                      class="swiper-slide-image swiperTeam-slide-image"
+                      src="https://studio.swiperjs.com/demo-images/nature/02.jpg"
+                    />
+                  </div>
+
+                  <div class="swiper-slide swiperTeam-slide">
+                    <img
+                      class="swiper-slide-image swiperTeam-slide-image"
+                      src="https://studio.swiperjs.com/demo-images/nature/03.jpg"
+                    />
+                  </div>
+                </div>
+                <div class="swiperTeam-pagination-wrapper">
+                  <div class="swiper-pagination swiperTeam-pagination"></div>
+
+                  <div class="swiper-button-prev swiperTeam-button-prev"></div>
+                  <div class="swiper-button-next swiperTeam-button-next"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
@@ -1819,6 +1907,15 @@
           prevEl: ".swiperBanks-button-prev",
           nextEl: ".swiperBanks-button-next",
         },
+      });
+
+      var swiperTeam = new Swiper(".swiperTeam", {
+        navigation: {
+          prevEl: ".swiperTeam-button-prev",
+          nextEl: ".swiperTeam-button-next",
+        },
+        loop: true,
+        pagination: { type: "fraction", el: ".swiperTeam-pagination" },
       });
     </script>
   </body>

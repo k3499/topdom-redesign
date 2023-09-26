@@ -2018,3 +2018,148 @@
   bottom: 0;
 }
 /*#endregion MORTGAGE */
+
+/*#region TEAM */
+.team__wrapper {
+  max-width: var(--main-width);
+  margin: 0 auto;
+}
+.team__title {
+  color: #000;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 20px 0 70px;
+}
+.team__content {
+  display: flex;
+  gap: 30px;
+}
+.team__content-left {
+  display: flex;
+  gap: 32px;
+  width: 50%;
+}
+.team__content-masters,
+.team__content-office {
+  width: 50%;
+}
+.team__content-masters-title {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0 0 5px;
+}
+.team__content-masters-subtitle {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  margin: 0 0 30px;
+}
+.arch-form__feature-list-team {
+  border-top: 4px solid var(--green-accent);
+  padding: 30px 0 0 0;
+}
+.swiperTeam {
+  user-select: none;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+  height: 460px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.swiperTeam-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  background-color: rgba(51, 51, 51, 1);
+  border-radius: 38px;
+}
+
+.swiperTeam-slide-image {
+  position: absolute;
+  object-fit: cover;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.team__content-right {
+  width: 50%;
+}
+
+.swiperTeam-button-prev {
+  background-image: url("/img/prev_n.svg") !important;
+  background-repeat: no-repeat;
+  background-size: 33px;
+  width: 33px;
+  height: 36px;
+  left: 25px;
+}
+
+.swiperTeam-button-next {
+  background-image: url("/img/play_n.svg") !important;
+  background-repeat: no-repeat;
+  background-size: 33px;
+  width: 33px;
+  height: 36px;
+  right: 25px;
+}
+.swiperTeam-button-next,
+.swiperTeam-button-prev {
+  top: calc(50% + 4px);
+}
+.swiperTeam-button-next:after,
+.swiperTeam-button-prev:after {
+  display: none;
+}
+.swiperTeam-pagination-wrapper {
+  box-sizing: border-box;
+  z-index: 2;
+  display: inline-block;
+  position: absolute;
+  width: 208px;
+  height: 61px;
+  bottom: 21px;
+  left: 21px;
+  border-radius: 153px;
+  border: 1.5px solid #797979;
+  background: rgba(96, 112, 131, 0.2);
+  backdrop-filter: blur(15px);
+}
+.swiperTeam-pagination .swiper-pagination-current {
+  color: #50de62;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+.swiperTeam-pagination {
+  color: var(--white-text);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.534px;
+}
+.swiperTeam-pagination .swiper-pagination-total {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.819px;
+}
+/*#endregion TEAM */
