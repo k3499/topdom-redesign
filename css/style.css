@@ -1106,6 +1106,95 @@
 .categoryGrid__list_floors {
   margin-bottom: 33px;
 }
+@media (max-width: 1440px) {
+  .categoryGrid {
+    padding: 45px 20px;
+  }
+  .categoryGrid__header-title {
+    font-size: 19px;
+  }
+  .categoryGrid__block {
+    padding: 15px;
+  }
+  .categoryGrid__wrapper {
+    gap: 20px 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 220px);
+  }
+  .categoryGrid__footer-watch-price {
+    font-size: 14px;
+    margin: 0;
+  }
+  .categoryGrid__footer-watch-price-accent {
+    font-size: 21px;
+  }
+  .categoryGrid__bg {
+    right: -51px;
+    bottom: -24px;
+  }
+  .categoryGrid__header-title_floors {
+    font-size: 28px;
+  }
+  .categoryGrid__floors {
+    grid-area: 3 / 1 / 5 / 3;
+    background: linear-gradient(
+        90deg,
+        rgb(4 4 4 / 45%) 36.64%,
+        rgba(69, 75, 90, 0) 100%
+      ),
+      url(/img/cat-floor.jpg) 50% no-repeat;
+    background-size: cover;
+    order: 1;
+  }
+}
+@media (max-width: 810px) {
+  .categoryGrid__wrapper {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+  .categoryGrid__block {
+    min-height: 181px;
+  }
+  .categoryGrid__header-title {
+    font-size: 17px;
+  }
+  .categoryGrid__list-link {
+    font-size: 10px;
+  }
+  .categoryGrid__header-wrap {
+    margin-bottom: 10px;
+  }
+  .categoryGrid__list-item {
+    margin-bottom: 2px;
+  }
+  .categoryGrid__footer-watch-all {
+    font-size: 10px;
+  }
+  .categoryGrid__footer-watch-price {
+    font-size: 11px;
+  }
+  .categoryGrid__footer-watch-price-accent {
+    font-size: 17px;
+  }
+  .categoryGrid__header-number-text {
+    border-radius: 35px;
+    padding: 8px 13px;
+    font-size: 10px;
+  }
+  .categoryGrid__floors {
+    height: 392px;
+  }
+  .categoryGrid__header-title_floors {
+    font-size: 26px;
+  }
+  .categoryGrid__footer-watch-price-accent_floors {
+    font-size: 26px;
+  }
+  .categoryGrid__footer-watch-price_floors {
+    font-size: 17px;
+  }
+}
 /*#endregion CATEGORY GRID */
 
 /*#region CATEGORY TAGS */
@@ -2529,4 +2618,5 @@
   line-height: normal;
   letter-spacing: 0.819px;
 }
+
 /*#endregion TEAM */
