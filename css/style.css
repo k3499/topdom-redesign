@@ -2237,8 +2237,6 @@
   .arch-form__bg {
     position: static;
   }
-}
-@media (max-width: 1060px) {
   .arch-form__feature-video1 {
     display: inline-block;
     margin-right: 30px;
@@ -2377,6 +2375,11 @@
   background: var(--green-accent) url(/img/whatsapp.svg) 22px 50% no-repeat;
   min-width: 212px;
 }
+@media (max-width: 1420px) {
+  .land {
+    display: none;
+  }
+}
 /*#endregion LAND */
 
 /*#region VIDEO PRESENTATION */
@@ -2420,6 +2423,11 @@
   width: 815px;
   padding: 0;
   margin: 0;
+}
+@media (max-width: 1420px) {
+  .videoPresentation {
+    display: none;
+  }
 }
 /*#endregion VIDEO PRESENTATION */
 
@@ -2537,6 +2545,11 @@
   font-style: normal;
   font-weight: 300;
   line-height: 131%;
+}
+@media (max-width: 1420px) {
+  .priceGuarantees {
+    display: none;
+  }
 }
 /*#endregion PRICE GUARANTEES */
 
@@ -2675,6 +2688,11 @@
 .swiperBanks-button-next {
   right: -50px;
 }
+@media (max-width: 1420px) {
+  .videoSlider {
+    display: none;
+  }
+}
 /*#endregion VIDEO SLIDER */
 
 /*#region MORTGAGE */
@@ -2746,6 +2764,76 @@
   position: absolute;
   right: -124px;
   bottom: 0;
+}
+@media (max-width: 1420px) {
+  .mortgage__bg {
+    position: static;
+    margin: 0 auto;
+    display: block;
+  }
+  .mortgage {
+    border-radius: 0;
+    border: 0;
+    padding: 55px 20px;
+  }
+  .mortgage-left-wrap {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .mortgage__title {
+    max-width: 100%;
+  }
+  .mortgage__button {
+    display: none;
+  }
+  .swiperBanks {
+    width: 100%;
+  }
+  .mortgage__slider-wrap {
+    order: 1;
+  }
+}
+@media (max-width: 900px) {
+  .mortgage {
+    overflow: hidden;
+  }
+  .mortgage__bg {
+    width: 160%;
+    margin-left: -132px;
+  }
+  .video-mortgage {
+    padding: 0px 0 84px;
+  }
+  .arch-form__container {
+    padding: 0 0 51px;
+  }
+  .mortgage__slider-wrap {
+    order: 1;
+    max-width: 220px;
+    margin: 0 auto;
+  }
+  .mortgage__slider-wrap {
+    margin-top: 48px;
+  }
+  .mortgage__slider-title {
+    text-align: center;
+    font-size: 24px;
+  }
+  .mortgage__title {
+    font-size: 27px;
+    color: #000;
+    font-weight: 400;
+  }
+  .arch-form__feature-item {
+    font-size: 20px;
+  }
+  .mortgage__percent {
+    font-size: 27px;
+  }
+  .mortgage__bank {
+    margin: 0 0 30px;
+  }
 }
 /*#endregion MORTGAGE */
 

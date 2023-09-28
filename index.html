@@ -413,7 +413,7 @@
       </section>
       <section class="project-list">
         <div class="project-list__wrapper">
-          <h1 class="title">Проекты домов</h1>
+          <!-- <h1 class="title">Проекты домов</h1>
           <ul class="categoryTags__wrapper">
             <li class="categoryTags__item">
               <a class="categoryTags__link" href="">Из камня</a>
@@ -436,7 +436,7 @@
             <li class="categoryTags__item">
               <a class="button-flat" href="">Смотреть все</a>
             </li>
-          </ul>
+          </ul> -->
           <div class="project-list__container">
             <div class="project">
               <div class="project__image-wrap">
@@ -1525,7 +1525,7 @@
           </div>
         </div>
       </section>
-      <!--<section class="land">
+      <section class="land">
         <div class="land__wrapper">
           <div class="land__picture-bg-book"></div>
           <div class="land__picture-left"></div>
@@ -1814,7 +1814,7 @@
           </div>
         </div>
       </section>
-      <section class="team">
+      <!--<section class="team">
         <div class="team__wrapper">
           <p class="team__title">Наша команда</p>
           <div class="team__content">
@@ -1925,11 +1925,19 @@
       });
 
       var swiperBanks = new Swiper(".swiperBanks", {
-        slidesPerView: 3,
+        // slidesPerView: 3,
         spaceBetween: 15,
         navigation: {
           prevEl: ".swiperBanks-button-prev",
           nextEl: ".swiperBanks-button-next",
+        },
+        breakpoints: {
+          900: {
+            slidesPerView: 1,
+          },
+          1440: {
+            slidesPerView: 3,
+          },
         },
       });
 
