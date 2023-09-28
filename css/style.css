@@ -397,6 +397,9 @@
   .header__menu-link {
     font-size: 19px;
   }
+  .header-white {
+    position: static !important;
+  }
 }
 @media (max-width: 640px) {
   .cover {
@@ -1037,7 +1040,7 @@
 }
 .categoryGrid__list-link {
   color: #fff;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 300;
   text-decoration-line: underline;
@@ -1160,7 +1163,7 @@
     font-size: 17px;
   }
   .categoryGrid__list-link {
-    font-size: 10px;
+    font-size: 13px;
   }
   .categoryGrid__header-wrap {
     margin-bottom: 10px;
@@ -1169,7 +1172,8 @@
     margin-bottom: 2px;
   }
   .categoryGrid__footer-watch-all {
-    font-size: 10px;
+    font-size: 11px;
+    font-weight: 400;
   }
   .categoryGrid__footer-watch-price {
     font-size: 11px;
@@ -1193,6 +1197,9 @@
   }
   .categoryGrid__footer-watch-price_floors {
     font-size: 17px;
+  }
+  .categoryGrid__header-title {
+    max-width: 160px;
   }
 }
 /*#endregion CATEGORY GRID */
@@ -1247,6 +1254,11 @@
   flex-wrap: wrap;
   gap: 30px 45px;
   padding: 0 0 50px;
+}
+@media (max-width: 1440px) {
+  .project-list__wrapper {
+    padding: 0 20px;
+  }
 }
 /*#endregion PROJECT LIST */
 
@@ -1528,6 +1540,83 @@
 }
 .project__contacts-text-accent {
   text-decoration: underline;
+}
+.project__loadMore {
+  display: none;
+}
+@media (max-width: 1440px) {
+  .project {
+    width: calc(50% - 30px);
+  }
+}
+@media (max-width: 940px) {
+  .project {
+    width: 100%;
+  }
+  .project-list__container {
+    gap: 40px;
+  }
+}
+@media (max-width: 550px) {
+  .project__title {
+    font-size: 17px;
+    margin: 0 31px 0 0;
+  }
+  .project__image-wrap {
+    height: 223px;
+    margin: 0 0 17px;
+  }
+  .project__image-status_hit {
+    top: 19px;
+    left: 19px;
+  }
+  .project__image-status_top {
+    top: 19px;
+    left: 78px;
+  }
+  .project__stats-name,
+  .project__stats-num {
+    font-size: 13px;
+  }
+  .project__stats-pic {
+    width: 14px;
+    height: 14px;
+  }
+  .project__stats-pic_size {
+    background-size: contain;
+  }
+  .project__title-wrap {
+    margin: 0 0 12px 0;
+  }
+  .project__stats-wrap {
+    gap: 14px 20px;
+    padding: 0 0 20px;
+  }
+  .project__options-wrap {
+    padding: 15px 0 11px;
+    margin: 0 0 21px;
+  }
+  .project__options-time-title,
+  .project__options-time-value,
+  .project__options-price-value,
+  .project__options-price-value span,
+  .project__options-price-link {
+    font-size: 11px;
+  }
+  .project__loadMore {
+    display: block;
+    color: #454545;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+    margin: 0 auto 44px;
+    width: fit-content;
+    padding: 0 10px 8px;
+    border-bottom: 1px dashed var(--green-accent);
+  }
 }
 
 /*#endregion PROJECT */
@@ -1884,7 +1973,96 @@
   bottom: 83px;
   left: -9px;
 }
-
+@media (max-width: 1440px) {
+  .numbers__bg-wrapper {
+    padding: 50px 20px;
+    border-radius: 0;
+  }
+  .numbers__card-title {
+    font-size: 36px;
+    margin: 29px 0 0 20px;
+  }
+  .numbers__card-subtitle {
+    margin: 0 0 0 20px;
+  }
+  .numbers__card__home-num-bg1,
+  .numbers__card__home-in-town1,
+  .numbers__card_price1 {
+    width: 273px;
+  }
+  .numbers__card_home-in-year1 {
+    width: 260px;
+  }
+  .numbers__card-subtitle {
+    max-width: 140px;
+  }
+  .numbers__card_price2 {
+    width: 73px;
+  }
+  .numbers__title,
+  .numbers__year {
+    font-size: 33px;
+  }
+}
+@media (max-width: 1054px) {
+  .numbers__card-wrap {
+    width: calc(50% - 24px);
+  }
+  .numbers__cards-wrap {
+    flex-wrap: wrap;
+  }
+  .numbers__card__home-num-bg1,
+  .numbers__card__home-in-town1,
+  .numbers__card_price1 {
+    width: 329px;
+  }
+  .numbers__card_home-in-year1 {
+    width: 330px;
+  }
+  .numbers__card_home-in-year1 {
+    width: 330px;
+  }
+  .numbers__card_price3 {
+    bottom: 0px;
+  }
+  .numbers__card__home-in-town3 {
+    bottom: 0px;
+    left: 103px;
+  }
+  .numbers__subtitle {
+    font-size: 17px;
+    max-width: 350px;
+  }
+}
+@media (max-width: 815px) {
+  .numbers__head {
+    display: flex;
+    align-items: center;
+    margin: 60px 0 67px;
+    flex-direction: column-reverse;
+  }
+  .numbers__year {
+    margin: 0 0 34px;
+    font-size: 24px;
+  }
+  .numbers__title {
+    margin: 0 0 22px 0;
+  }
+  .numbers__subtitle {
+    order: -1;
+    font-size: 18px;
+    text-align: center;
+  }
+}
+@media (max-width: 685px) {
+  .numbers__card-wrap {
+    width: 100%;
+    gap: 38px;
+  }
+  .numbers__head {
+    margin: 0 0 67px;
+  }
+}
 /*#endregion NUMBERS */
 
 /*#region ARCH */
@@ -2027,6 +2205,47 @@
   right: -89px;
   bottom: 135px;
   rotate: 180deg;
+}
+@media (max-width: 1615px) {
+  .arch-form__wrapper {
+    overflow: hidden;
+  }
+}
+@media (max-width: 1440px) {
+  .arch-form__wrapper {
+    width: 100%;
+    max-width: 1420px;
+    padding: 0 20px;
+  }
+  .arch-form__bg {
+    right: 0px;
+    bottom: 0px;
+  }
+  .arch-form__container {
+    display: flex;
+    gap: 40px;
+  }
+}
+@media (max-width: 1240px) {
+  .arch-form__container {
+    flex-direction: column;
+  }
+  .arch-form__bg-tree1,
+  .arch-form__bg-tree2 {
+    display: none;
+  }
+  .arch-form__bg {
+    position: static;
+  }
+}
+@media (max-width: 1060px) {
+  .arch-form__feature-video1 {
+    display: inline-block;
+    margin-right: 30px;
+  }
+  .arch-form__feature-video2 {
+    display: inline-block;
+  }
 }
 /*#endregion ARCH */
 
