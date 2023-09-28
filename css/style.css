@@ -350,6 +350,9 @@
   .header__social {
     display: none;
   }
+  .header-white {
+    position: static !important;
+  }
 }
 @media (max-width: 1070px) {
   .header__social {
