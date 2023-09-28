@@ -2246,6 +2246,61 @@
   .arch-form__feature-video2 {
     display: inline-block;
   }
+  .arch-form__form {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .arch-form {
+    margin: 0 auto;
+    padding-top: 55px;
+  }
+  .arch-form__title {
+    font-size: 24px;
+  }
+  .arch-form__feature {
+    padding: 55px 0 0 0;
+  }
+  .arch-form__feature-item {
+    background: url(/img/arrow-green.svg) 0 6px no-repeat;
+    margin-bottom: 15px;
+  }
+  .arch-form__feature-title {
+    margin: 0 0 20px;
+  }
+  .arch-form__feature-video1,
+  .arch-form__feature-video2 {
+    display: flex;
+  }
+  .arch-form__form {
+    padding: 13px;
+  }
+  .consultation-form__submit {
+    padding: 16px 18px 16px 40px;
+    font-size: 12px;
+    background-size: 18px;
+    background: var(--green-accent) url(/img/whatsapp.svg) 21px 50% no-repeat;
+  }
+  .consultation__form-title_arch {
+    font-size: 21px;
+  }
+  .consultation__form-subtitle {
+    max-width: 155px;
+    margin: 0 auto 24px;
+    padding: 0 0 15px;
+  }
+  .consultation-form__input {
+    height: 48px;
+    font-size: 20px;
+    font-size: 13px;
+  }
+  .consultation-form__checkbox-wrap {
+    margin: 18px auto 28px;
+    padding: 0;
+  }
+  .consultation-form__checkbox + label {
+    font-size: 12px;
+  }
 }
 /*#endregion ARCH */
 
