@@ -2775,6 +2775,7 @@
     border-radius: 0;
     border: 0;
     padding: 55px 20px;
+    overflow: hidden;
   }
   .mortgage-left-wrap {
     max-width: 100%;
@@ -2793,28 +2794,10 @@
   .mortgage__slider-wrap {
     order: 1;
   }
-}
-@media (max-width: 900px) {
-  .mortgage {
-    overflow: hidden;
-  }
-  .mortgage__bg {
-    width: 160%;
-    margin-left: -132px;
-  }
-  .video-mortgage {
-    padding: 0px 0 84px;
-  }
-  .arch-form__container {
-    padding: 0 0 51px;
-  }
   .mortgage__slider-wrap {
     order: 1;
     max-width: 220px;
-    margin: 0 auto;
-  }
-  .mortgage__slider-wrap {
-    margin-top: 48px;
+    margin: 48px auto;
   }
   .mortgage__slider-title {
     text-align: center;
@@ -2825,6 +2808,21 @@
     color: #000;
     font-weight: 400;
   }
+}
+@media (max-width: 900px) {
+  .mortgage {
+    overflow: hidden;
+  }
+  .mortgage__bg {
+    width: 100%;
+  }
+  .video-mortgage {
+    padding: 0px 0 84px;
+  }
+  .arch-form__container {
+    padding: 0 0 51px;
+  }
+
   .arch-form__feature-item {
     font-size: 20px;
   }
@@ -2980,5 +2978,75 @@
   line-height: normal;
   letter-spacing: 0.819px;
 }
-
+@media (max-width: 1440px) {
+  .team {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 1220px) {
+  .team {
+    padding: 0 20px;
+  }
+  .team__content {
+    gap: 30px;
+    flex-direction: column;
+  }
+  .team__content-left,
+  .team__content-right {
+    width: 100%;
+  }
+  .swiperTeam {
+    height: 418px;
+  }
+}
+@media (max-width: 750px) {
+  .team__content-left {
+    flex-direction: column;
+  }
+  .team__content-masters,
+  .team__content-office {
+    width: 100%;
+  }
+  .arch-form__feature-item {
+    margin-bottom: 4px;
+  }
+  .swiperTeam {
+    height: 218px;
+  }
+  .swiperTeam-pagination-wrapper {
+    width: 110px;
+    height: 40px;
+    bottom: 10px;
+    left: 10px;
+  }
+  .swiperTeam-button-prev {
+    background-size: 21px;
+    width: 21px;
+    height: 23px;
+    left: 12px;
+  }
+  .swiperTeam-button-next {
+    background-size: 21px;
+    width: 21px;
+    height: 23px;
+    right: 12px;
+  }
+  .swiperTeam-pagination .swiper-pagination-current,
+  .swiperTeam-pagination {
+    font-size: 14px;
+  }
+  .swiperTeam-pagination .swiper-pagination-total {
+    font-size: 9px;
+  }
+  .swiperTeam-button-next,
+  .swiperTeam-button-prev {
+    top: calc(50% + 11px);
+  }
+  .swiperTeam-slide {
+    border-radius: 18px;
+  }
+  .swiperTeam-pagination {
+    top: 11px;
+  }
+}
 /*#endregion TEAM */
