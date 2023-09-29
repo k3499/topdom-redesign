@@ -888,6 +888,9 @@
   }
 }
 @media (max-width: 786px) {
+  .welcome {
+    margin: 0 auto;
+  }
   .welcome__seoPhoto {
     width: 100%;
     padding-bottom: 100%;
@@ -1767,6 +1770,23 @@
   width: 415px;
   height: 172px;
 }
+@media (max-width: 750px) {
+  .consultation__form-wrap {
+    padding: 30px;
+  }
+  .consultation__form-title {
+    margin: 21px 0 3px;
+    font-size: 23px;
+  }
+  .consultation__form-subtitle {
+    font-size: 14px;
+    max-width: 227px;
+  }
+  .consultation__bg {
+    width: 326px;
+    height: 129px;
+  }
+}
 /*#endregion CONSULTATION FORM */
 
 /*#region NUMBERS */
@@ -2055,6 +2075,8 @@
     order: -1;
     font-size: 18px;
     text-align: center;
+    border-left: 0;
+    padding: 0;
   }
 }
 @media (max-width: 685px) {
@@ -2241,11 +2263,11 @@
     position: static;
   }
   .arch-form__feature-video1 {
-    display: inline-block;
+    display: inline-flex;
     margin-right: 30px;
   }
   .arch-form__feature-video2 {
-    display: inline-block;
+    display: inline-flex;
   }
   .arch-form__form {
     margin: 0 auto;

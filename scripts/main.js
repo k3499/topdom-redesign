@@ -2,9 +2,10 @@
 window.addEventListener("scroll", function () {
   const header = document.querySelector(".header");
   const logo = document.querySelector(".logo");
+  const maxWidth = window.matchMedia("(min-width: 1200px)");
 
   // Проверяем, что пользователь прокрутил страницу вниз
-  if (window.scrollY > 0) {
+  if (window.scrollY > 0 && maxWidth.matches) {
     // Добавляем новый класс к элементу
     header.classList.add("header-white");
     logo.classList.add("logo_black");
@@ -17,7 +18,3 @@ window.addEventListener("scroll", function () {
   }
 });
 //menu end
-
-//
-
-//
